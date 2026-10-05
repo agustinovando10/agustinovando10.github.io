@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cotizador Seguros</title>
+  <meta name="description" content="Cotizador de planes de seguro de salud para corredores, con registro de clientes en Google Sheets.">
+  <style>
+    :root {
+      --fondo: #f6f7f9;
+      --tarjeta: #ffffff;
+      --texto: #1c2430;
+      --suave: #5b6675;
+      --marca: #0e4c73;
+      --borde: #e2e6ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+    header { background: var(--marca); color: #fff; padding: 48px 16px 40px; }
+    main, .contenido { max-width: 760px; margin: 0 auto; }
+    header h1 { margin: 0 0 8px; font-size: 2rem; }
+    header p { margin: 0; opacity: .9; font-size: 1.1rem; }
+    main { padding: 32px 16px 48px; }
+    section {
+      background: var(--tarjeta);
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 { margin-top: 0; font-size: 1.25rem; color: var(--marca); }
+    ul { padding-left: 20px; margin: 0; }
+    li { margin-bottom: 6px; }
+    a { color: var(--marca); }
+    footer { text-align: center; color: var(--suave); font-size: .9rem; padding: 0 16px 32px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="contenido">
+      <h1>Cotizador Seguros</h1>
+      <p>Cotiza planes de salud en segundos y lleva el registro de tus clientes en tu propio Google Sheet.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Qué es</h2>
+      <p>
+        Cotizador Seguros es una aplicación para tablets Android pensada para corredores de seguros.
+        Calcula el valor de los planes según las edades del grupo familiar, arma el correo para el
+        cliente con los documentos de cada plan y guarda los datos del cliente en una hoja de cálculo.
+      </p>
+      <p>
+        Es una herramienta de uso privado, entregada directamente a cada corredor. No está publicada en
+        tiendas de aplicaciones.
+      </p>
+    </section>
+
+    <section>
+      <h2>Qué hace</h2>
+      <ul>
+        <li>Cotiza varios planes a la vez, con el valor de la UF del día.</li>
+        <li>Permite editar las tarifas de cada plan y respaldarlas.</li>
+        <li>Prepara el correo para el cliente con los PDFs de los planes cotizados.</li>
+        <li>Guarda los datos de cada cliente como una fila nueva en un Google Sheet del propio corredor.</li>
+        <li>Funciona sin internet: lo que no se pudo guardar se envía cuando vuelve la conexión.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tus datos son tuyos</h2>
+      <p>
+        Al conectar tu cuenta de Google, la aplicación crea un Google Sheet en <strong>tu</strong> Google
+        Drive y escribe ahí los datos de tus clientes. Solo puede acceder a los archivos que ella misma
+        crea: no ve el resto de tu Drive ni tus otras hojas. Los datos no se envían a ningún servidor del
+        desarrollador.
+      </p>
+      <p>Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>
+        Agustín Ovando ·
+        <a href="mailto:agustinovando10@gmail.com">agustinovando10@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+</body>
+</html>

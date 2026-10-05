@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · Cotizador Seguros</title>
+  <meta name="description" content="Política de privacidad de la aplicación Cotizador Seguros.">
+  <style>
+    :root {
+      --fondo: #f6f7f9;
+      --tarjeta: #ffffff;
+      --texto: #1c2430;
+      --suave: #5b6675;
+      --marca: #0e4c73;
+      --borde: #e2e6ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+    header { background: var(--marca); color: #fff; padding: 40px 16px 32px; }
+    .contenido { max-width: 760px; margin: 0 auto; }
+    header h1 { margin: 0 0 6px; font-size: 2rem; }
+    header p { margin: 0; opacity: .9; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+    article {
+      background: var(--tarjeta);
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    h2 { font-size: 1.25rem; color: var(--marca); margin-top: 28px; }
+    h2:first-child { margin-top: 0; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--marca); }
+    .nota { color: var(--suave); font-size: .8rem; }
+    footer { text-align: center; color: var(--suave); font-size: .8rem; padding: 0 16px 32px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="contenido">
+      <h1>Política de privacidad</h1>
+      <p>Cotizador Seguros · Última actualización: 5 de octubre de 2026</p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <h2>Quién es responsable</h2>
+      <p>
+        Cotizador Seguros (“la aplicación”) es desarrollada por Agustín Ovando, en Chile. Para cualquier
+        consulta sobre esta política o sobre tus datos, escribe a
+        <a href="mailto:agustinovando10@gmail.com">agustinovando10@gmail.com</a>.
+      </p>
+      <p>
+        La aplicación la usan corredores de seguros (“el usuario”) para cotizar planes y registrar a sus
+        clientes. El usuario decide qué datos de sus clientes ingresa y es responsable de contar con su
+        autorización para tratarlos.
+      </p>
+
+      <h2>Resumen</h2>
+      <ul>
+        <li>Los datos se guardan <strong>en la tablet</strong> y en un <strong>Google Sheet del propio usuario</strong>.</li>
+        <li>El desarrollador <strong>no tiene servidores</strong> que reciban, guarden o lean esos datos.</li>
+        <li>No hay publicidad, no hay analítica y no se venden ni se comparten datos.</li>
+      </ul>
+
+      <h2>Datos que la aplicación usa</h2>
+      <p><strong>Datos de los clientes que ingresa el usuario:</strong> nombre y apellido, RUT u otra nota en
+        ese campo, edades del grupo familiar, previsión de salud, correo electrónico, teléfono, comentarios
+        y planes cotizados.</p>
+      <p><strong>Datos de la cuenta de Google del usuario:</strong> la dirección de correo de la cuenta, para
+        mostrar con qué cuenta está conectada la aplicación.</p>
+      <p><strong>Configuración de la aplicación:</strong> tarifas de los planes, documentos PDF cargados por
+        el usuario y textos del correo. Quedan solo en la tablet.</p>
+
+      <h2>Para qué se usan</h2>
+      <ul>
+        <li>Calcular el valor de los planes.</li>
+        <li>Preparar el correo con la cotización, que el usuario envía desde su propia aplicación de correo.</li>
+        <li>Guardar el registro del cliente como una fila nueva en el Google Sheet del usuario.</li>
+      </ul>
+      <p>No se usan para ningún otro fin.</p>
+
+      <h2>Acceso a tu cuenta de Google</h2>
+      <p>
+        Si el usuario conecta su cuenta de Google, la aplicación pide un único permiso:
+        <strong>ver, editar, crear y borrar solo los archivos de Google Drive que la aplicación crea</strong>
+        (permiso <code>drive.file</code>). Con él, la aplicación crea un Google Sheet en el Drive del usuario y
+        agrega ahí las filas de clientes.
+      </p>
+      <p>
+        La aplicación <strong>no puede ver</strong> los demás archivos del Drive, otras hojas de cálculo, los
+        correos ni los contactos del usuario.
+      </p>
+      <p>
+        Las credenciales de acceso que entrega Google se guardan solo en la tablet. Los datos viajan
+        directamente de la tablet a Google mediante conexiones cifradas (HTTPS), sin pasar por ningún
+        servidor del desarrollador.
+      </p>
+      <p>
+        El uso y la transferencia a cualquier otra aplicación de la información recibida de las API de
+        Google cumplirán con la
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos del
+        usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.
+      </p>
+
+      <h2>Con quién se comparten</h2>
+      <p>
+        Con nadie. Los datos solo llegan a Google, como proveedor del Google Sheet que el usuario eligió
+        conectar, y al destinatario del correo que el usuario decide enviar. La aplicación también consulta
+        el valor de la UF en <a href="https://mindicador.cl">mindicador.cl</a>; esa consulta no incluye
+        datos personales.
+      </p>
+
+      <h2>Cuánto tiempo se guardan</h2>
+      <p>
+        Los datos en el Google Sheet permanecen ahí mientras el usuario no los borre. En la tablet, los
+        clientes que no se pudieron enviar por falta de internet se guardan hasta que se envían, y luego se
+        eliminan de la tablet.
+      </p>
+
+      <h2>Cómo quitar el acceso o borrar los datos</h2>
+      <ul>
+        <li><strong>Quitar el acceso a Google:</strong> en
+          <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, elige
+          “Cotizador Seguros” y quita el acceso.</li>
+        <li><strong>Borrar los datos de clientes:</strong> borra las filas o el Google Sheet desde tu Drive.</li>
+        <li><strong>Borrar los datos de la tablet:</strong> desinstala la aplicación.</li>
+      </ul>
+      <p>
+        Como el desarrollador no guarda datos, no tiene nada que borrar por su parte. Si tienes dudas, escribe
+        al correo de contacto.
+      </p>
+
+      <h2>Derechos de los titulares</h2>
+      <p>
+        Las personas cuyos datos registra un corredor pueden pedirle a ese corredor acceder, corregir o
+        eliminar sus datos, según la legislación chilena de protección de datos personales. El desarrollador
+        ayudará al usuario en lo que necesite para responder esas solicitudes.
+      </p>
+
+      <h2>Menores de edad</h2>
+      <p>
+        La aplicación es para uso de corredores de seguros adultos. Las edades de menores solo se ingresan
+        como parte de un grupo familiar cotizado, a cargo de un adulto.
+      </p>
+
+      <h2>Cambios a esta política</h2>
+      <p>
+        Si esta política cambia, se publicará aquí con una nueva fecha de actualización.
+      </p>
+
+      <p class="nota"><a href="index.html">← Volver al inicio</a></p>
+    </article>
+  </main>
+
+  <footer>Cotizador Seguros</footer>
+</body>
+</html>
